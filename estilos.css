@@ -1,0 +1,42 @@
+.tablasTareas{
+    height: 600px;
+    width: 200px;
+    border-style: solid;
+    margin-right: 2%;
+}
+.tablas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+.formulario{
+    display: grid;
+    justify-content: center;
+}
+button{
+    width: 100%;
+}
+.tarjetaTarea{
+    width: 95%;
+    height: 10%;
+    border-style: solid;
+    border-width:1px;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    display: none;
+}
+.cambiarTarea{
+    width: 50%;
+}
+.botonesTareas{
+    display: flex;
+}
+.tarjetaTareaVisible{
+    width: 95%;
+    height: 10%;
+    border-style: solid;
+    border-width:1px;
+    margin-left: 2.5%;
+    margin-top: 1%;
+}

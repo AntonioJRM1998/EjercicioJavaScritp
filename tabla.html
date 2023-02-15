@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <label for="tarea">Tarea:</label>
+            <input type="text" id="tarea"><br>
+            <label for="importancia">Importancia</label>
+            <input type="text" id="importancia">
+        </div>
+        <div class="tablas">
+            <div class="tablasTareas" id="todo">
+                <p>To Do</p>
+                <button onclick="añadirTarea('todo')">Añadir Tarea</button>
+            </div>
+            <div class="tablasTareas" id="enprogreso">
+                <p>Programando</p>
+                <button onclick="añadirTarea('enprogreso')">Añadir Tarea</button>
+            </div>
+            <div class="tablasTareas" id="terminado">
+                <p>Terminado</p>
+                <button onclick="añadirTarea('terminado')">Añadir Tarea</button>
+            </div>
+            <div class="tablasTareas" id="eliminado">
+                <p>Tareas eliminadas</p>
+            </div>
+        </div>
+        <div class="tarjetaTarea" id="tarjetaTarea">
+            <label for="nombreTarea">Tarea:</label>
+            <label for="pruebaTarea" id="nombreTareaLabel">Prueba Tarea</label><br>
+            <label for="importanciaTarea">Importancia:</label>
+            <label for="importanciaTareaPrueba"></label>
+            <div class="botonesTareas">
+                <select name="selectorTablas" id="selectorTablas" onchange="moverElemento(this)">
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="todo">To Do</option>
+                    <option value="enprogreso">En Progreso</option>
+                    <option value="terminado">Terminado</option>
+                </select>
+                <button>Eliminar</button>
+            </div>
+        </div>
+    </div>
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
